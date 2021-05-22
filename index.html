@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <!-- <script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        $(".sam").toggle();
+      });
+    });
+    </script> -->
+         <style>
+       
+        #A{height:100px; width:100%;
+        background-color:black; 
+        color:rgb(255, 255, 255);}
+
+        .A1{height:100px; width:40%; float: left;}
+
+        .A2{height:100px; width:60%; float: left;}
+
+        #B{width:100%;
+        margin:0px;
+        padding:0px;}
+        
+        #C{width: 100%;
+          height:300px;
+          background-color:grey;
+          text-align: center;
+        }
+
+        #D{height:300px;
+        width:100%;}
+
+        .D1{height:300px;
+        width:50%;
+        float: left;
+        background-color: grey;
+        color:black;
+        }
+
+        .D2{height:300px;
+        width:50%;
+        float: left;
+        background-color: grey;
+        color: black;
+        }
+        
+        #E{height: 50px;
+        color:black;
+        background-color: grey;
+        margin:0px;
+        padding: 0px;
+        line-height: 50px;}
+
+
+      ul{margin:0px;
+      padding:0px;
+      list-style: none;
+      height: 36px;
+      line-height: 36px;
+      background-color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;}
+
+     li{float:left;
+    }
+
+    .ria{ border-right: 1px solid rgb(224, 24, 24);}
+
+     a{display: block;
+     padding: 0 120px;
+     color:white;
+     text-decoration:none;}
+
+     a:hover{background-color:rgb(224, 24, 24);}
+
+     .first{border: none;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size:large;
+     font-weight: 400;}
+
+     .head{font-weight: 700;
+     font-size: xx-large;}
+
+     p{font-size: large;}
+
+     .lwrbtn:hover{background-color: black;}
+       
+     </style>
+</head>
+<body>
+    
+    <div id="A">
+        <div class="A1"><img src="./imges/chef.jfif" width="30%" height="100px"></div>
+        <div class="A2"><b><h1><I>Mumma's Kitchen</I></h1></b></div>
+     </div>
+    <div id="B">
+        <ul>
+            <li class="ria"><a href="index.html">HOME</a></li>
+            <li class="ria"><a href="about.html">ABOUT</a></li>
+            <li class="ria"><a href="contactus.html">CONTACT</a></li>
+            <li class="ria"><a href="foodmenu.html">FOOD MENU</a></li>
+            <li class="ria"><a href="testimonial.html">Testimonial</a></li>
+        </ul>
+        </div>
+    <div id="C"><img src="./imges/burger.jfif" id="ria" height="320px" width="800px">
+        </div>
+        <script>
+            var imgArray = ["./imges/cake.jfif", "./imges/bread pizza.jfif", "./imges/cutlet.jfif","./imges/burger.jfif"];
+            var idx = 0;
+            var dur = 3000;
+            function slidingpic() {
+                document.getElementById("ria").src = imgArray[idx];
+                idx++;
+                if (idx == imgArray.length) {
+                    idx = 0;
+                }
+                setTimeout("slidingpic()", dur);
+            }
+            slidingpic();
+        </script>
+        <div id="D">
+            <div class="D1">
+                <h1 class="head"><center><marquee><b>OUR SERVICE</marquee></b></center></h1>
+                <ol class="first">
+                    <li>Open till 10:00 P.M.</li><br>
+                    <li>Eco-friendly packaging(delivery in paper bags)</li><br>
+                    <li>Foods are prepared by clean and green veggies.</li><br>
+                    <li>Available on all 7 days.</li><br>
+                    <li>Special discounts on weekends.</li>
+                </ol>
+                </div>
+            <div class="D2">
+                <h1 class="head" ><center><b>ABOUT US....</b></center></h1>
+                <p>Mumma’s Kitchen is a prestigious brand name in the North Indian Food Restaurant.<br>
+                     We are delivering happiness through tasty food since 2017 in BIHAR.<br>
+                     We are specialized in CAKE and Traditional Bihari Food.</p>
+                <p class="sam"><b>Meet us in BABU BAZAR and Dharman Chowk ARRAH.</b></p>
+                <!-- <button>show less/show more</button> -->
+                <a class="lwrbtn" href="about.html"><button>to know more click here</button></a>
+                 </div>
+                 </div>
+            <div id="E">
+                <p><b><center>Created By:SAMRIDHI PATHAK</center></b></p>
+            </div>
+            
+
+            
+</body>
+</html>
